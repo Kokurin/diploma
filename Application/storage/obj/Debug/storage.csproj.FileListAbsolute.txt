@@ -1,0 +1,12 @@
+C:\Users\Василий\Documents\GitHub\diploma\Application\storage\bin\Debug\db.mdf
+C:\Users\Василий\Documents\GitHub\diploma\Application\storage\bin\Debug\db_log.ldf
+C:\Users\Василий\Documents\GitHub\diploma\Application\storage\bin\Debug\storage.exe.config
+C:\Users\Василий\Documents\GitHub\diploma\Application\storage\bin\Debug\storage.exe
+C:\Users\Василий\Documents\GitHub\diploma\Application\storage\bin\Debug\storage.pdb
+C:\Users\Василий\Documents\GitHub\diploma\Application\storage\obj\Debug\storage.csprojAssemblyReference.cache
+C:\Users\Василий\Documents\GitHub\diploma\Application\storage\obj\Debug\storage.Login.resources
+C:\Users\Василий\Documents\GitHub\diploma\Application\storage\obj\Debug\storage.Properties.Resources.resources
+C:\Users\Василий\Documents\GitHub\diploma\Application\storage\obj\Debug\storage.csproj.GenerateResource.cache
+C:\Users\Василий\Documents\GitHub\diploma\Application\storage\obj\Debug\storage.exe
+C:\Users\Василий\Documents\GitHub\diploma\Application\storage\obj\Debug\storage.pdb
+C:\Users\Василий\Documents\GitHub\diploma\Application\storage\obj\Debug\storage.Form1.resources
