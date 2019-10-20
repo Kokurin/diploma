@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <Meta content="IE=EmulateIE9" http-equiv="X-UA-Compatible"></Meta>
+    <Meta content="text/html;charset=UTF-8" http-equiv="Content-Type"></Meta>
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/messages.js"></script>
+    <link media="all" rel="stylesheet" type="text/css" href="css/messages.css"></link>
+  </head>
+  <body STYLE="width:100%;" onload="javascript:init();reloadSavedRequisites();" scroll="no" onresize="buttonStatusReset();init();">
+    <table width="100%" height="10px" cellpadding="0" cellspacing="0">
+      <tr valign="middle">
+        <td align="center">
+          <table width="52px" height="9px" cellpadding="0" cellspacing="0" style="cursor:pointer; background-repeat: no-repeat" onmouseover="this.style.backgroundImage=&#39;url(img/expander_button.gif)&#39;;" onmouseout="this.style.backgroundImage=&#39;none&#39;;" onclick="this.style.backgroundImage=&#39;none&#39;;Expand()">
+            <tr valign="middle">
+              <td id="expander_td" name="expander_td" style="cursor:pointer; background-repeat: no-repeat; background-position:center; background-image: url(&#39;img/expander_arrow_down.gif&#39;)"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <div id="mainDiv" STYLE="height:100%;width:100%;">
+      <div class="panel">
+        <ul class="add-nav">
+          <li>
+            <span disabled="disabled" style="color:gray;" class="unSelectedTab" id="errors">
+              <img src="img/error.gif" width="14" height="14"></img>
+              <span id="espan">Error (0)</span>
+            </span>
+          </li>
+          <li>
+            <span disabled="disabled" style="color:gray;" class="unSelectedTab" id="warnings">
+              <img src="img/warning.gif" width="14" height="14"></img>
+              <span id="wspan">Warning (0)</span>
+            </span>
+          </li>
+          <li>
+            <a onclick="changeButton(3);" role="button" href="#" aria-label="Display informational conversion messages">
+              <span class="selectedTab" id="infos">
+                <img src="img/info.gif" width="14" height="14"></img>
+                <span id="ispan">Info (28)</span>
+              </span>
+            </a>
+          </li>
+        </ul>
+        <span style="top:8px; position:absolute;width:400px;font-family:Arial;font-size:14px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total estimated manual conversion time:
+          <span style="color:firebrick;top:0px; position:absolute;" id="etime">0 hr(s)</span>
+        </span>
+      </div>
+      <div id="innerDiv" style="HEIGHT: 194px; OVERFLOW-Y: auto">
+        <div id="errorDiv" style="DISPLAY: block">
+          <table dataSrc="#errorData" id="errorTable" class="unSelectedTable"></table>
+        </div>
+        <div id="warningDiv" style="DISPLAY: block">
+          <table dataSrc="#warningData" id="warningTable" class="unSelectedTable"></table>
+        </div>
+        <div id="infoDiv" style="DISPLAY: block">
+          <table dataSrc="#infoData" id="infoTable" class="selectedTable">
+            <tbody>
+              <tr>
+                <td>&nbsp;
+                  <a onclick="toggle(this)" href="#" class="expander-link" role="button" aria-label="M2SS0055 : Data type converted according to character set mapping (28), collapsed, press Enter to expand">
+                    <img class="tableMinusIcons" src="img/nolines_plus.gif"></img>
+                  </a>
+                  <img class="tableIcons" src="img/info.gif"></img>
+                  &nbsp;
+                  <span dataFld="description">
+                    <span>M2SS0055</span>
+                    : Data type converted according to character set mapping (28)</span>
+                  <span dataFld="name" style="DISPLAY: none">1</span>
+                  <table style="DISPLAY: none">
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div>
+                            <div style="CURSOR: pointer; POSITION: relative; LEFT: 43px">
+                              <a href="#" role="button" onclick="pathTo(&#39;28ab4f06-241e-4901-8d09-a10b29cc8ca1&#39;,3);changeSelection(this);">
+                                <img src="img/table_info.gif"></img>
+                                decom_equipment (6)</a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div>
+                            <div style="CURSOR: pointer; POSITION: relative; LEFT: 43px">
+                              <a href="#" role="button" onclick="pathTo(&#39;57b11d2f-133c-4b7f-8322-d983362561f5&#39;,3);changeSelection(this);">
+                                <img src="img/table_info.gif"></img>
+                                journal (2)</a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div>
+                            <div style="CURSOR: pointer; POSITION: relative; LEFT: 43px">
+                              <a href="#" role="button" onclick="pathTo(&#39;5e53ddc0-04fe-4ae0-aa12-f82e6303be26&#39;,3);changeSelection(this);">
+                                <img src="img/table_info.gif"></img>
+                                responsible_person (4)</a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div>
+                            <div style="CURSOR: pointer; POSITION: relative; LEFT: 43px">
+                              <a href="#" role="button" onclick="pathTo(&#39;65740e95-90fa-4b6b-ae09-6a22aec9eb33&#39;,3);changeSelection(this);">
+                                <img src="img/table_info.gif"></img>
+                                journal_history (3)</a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div>
+                            <div style="CURSOR: pointer; POSITION: relative; LEFT: 43px">
+                              <a href="#" role="button" onclick="pathTo(&#39;6c137d55-1062-41ae-819b-5bf0fcbabc61&#39;,3);changeSelection(this);">
+                                <img src="img/table_info.gif"></img>
+                                object_status (1)</a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div>
+                            <div style="CURSOR: pointer; POSITION: relative; LEFT: 43px">
+                              <a href="#" role="button" onclick="pathTo(&#39;7eea2c93-4b6a-4dc1-b870-5714baac303b&#39;,3);changeSelection(this);">
+                                <img src="img/table_info.gif"></img>
+                                objective_function (1)</a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div>
+                            <div style="CURSOR: pointer; POSITION: relative; LEFT: 43px">
+                              <a href="#" role="button" onclick="pathTo(&#39;86408c64-1a5d-42f5-8fa7-5e8229b3c508&#39;,3);changeSelection(this);">
+                                <img src="img/table_info.gif"></img>
+                                type_of_equipment (1)</a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div>
+                            <div style="CURSOR: pointer; POSITION: relative; LEFT: 43px">
+                              <a href="#" role="button" onclick="pathTo(&#39;9db88b3d-708c-43c5-b1ec-d560d83ce854&#39;,3);changeSelection(this);">
+                                <img src="img/table_info.gif"></img>
+                                users (3)</a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div>
+                            <div style="CURSOR: pointer; POSITION: relative; LEFT: 43px">
+                              <a href="#" role="button" onclick="pathTo(&#39;ad0bd2d6-7fbe-4868-9aa6-fbe4e34411a5&#39;,3);changeSelection(this);">
+                                <img src="img/table_info.gif"></img>
+                                equipments (6)</a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div>
+                            <div style="CURSOR: pointer; POSITION: relative; LEFT: 43px">
+                              <a href="#" role="button" onclick="pathTo(&#39;ecb7d438-47e7-4fa8-a2cc-680a1b45b6e6&#39;,3);changeSelection(this);">
+                                <img src="img/table_info.gif"></img>
+                                rooms (1)</a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

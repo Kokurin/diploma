@@ -1,0 +1,11 @@
+CREATE TABLE `journal` (
+  `ID_record` int(11) NOT NULL AUTO_INCREMENT,
+  `ID_equipment` int(11) NOT NULL,
+  `Room` varchar(20) NOT NULL,
+  `Location` varchar(20) DEFAULT NULL,
+  PRIMARY KEY (`ID_record`),
+  KEY `R_11` (`ID_equipment`),
+  KEY `R_12` (`Room`),
+  CONSTRAINT `journal_ibfk_1` FOREIGN KEY (`ID_equipment`) REFERENCES `equipments` (`ID_equipment`),
+  CONSTRAINT `journal_ibfk_2` FOREIGN KEY (`Room`) REFERENCES `rooms` (`Room`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1

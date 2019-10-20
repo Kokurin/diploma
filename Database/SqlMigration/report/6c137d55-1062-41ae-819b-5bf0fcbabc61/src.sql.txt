@@ -1,0 +1,4 @@
+CREATE TABLE `object_status` (
+  `Status` varchar(20) NOT NULL DEFAULT '',
+  PRIMARY KEY (`Status`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1

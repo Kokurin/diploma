@@ -1,0 +1,21 @@
+CREATE TABLE `equipments` (
+  `ID_equipment` int(11) NOT NULL AUTO_INCREMENT,
+  `Name` varchar(200) NOT NULL,
+  `Type` varchar(30) NOT NULL,
+  `Status` varchar(20) NOT NULL,
+  `Function` varchar(20) NOT NULL,
+  `ID_person` int(11) NOT NULL,
+  `The_warranty_ends` date DEFAULT NULL,
+  `Release_year` date DEFAULT NULL,
+  `Сharacteristics` text,
+  `Note` text,
+  PRIMARY KEY (`ID_equipment`),
+  KEY `R_7` (`Type`),
+  KEY `R_8` (`Status`),
+  KEY `R_9` (`ID_person`),
+  KEY `R_10` (`Function`),
+  CONSTRAINT `equipments_ibfk_1` FOREIGN KEY (`Type`) REFERENCES `type_of_equipment` (`Type`),
+  CONSTRAINT `equipments_ibfk_2` FOREIGN KEY (`Status`) REFERENCES `object_status` (`Status`),
+  CONSTRAINT `equipments_ibfk_3` FOREIGN KEY (`ID_person`) REFERENCES `responsible_person` (`ID_person`),
+  CONSTRAINT `equipments_ibfk_4` FOREIGN KEY (`Function`) REFERENCES `objective_function` (`Function`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1

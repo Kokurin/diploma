@@ -1,0 +1,7 @@
+CREATE TABLE `users` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `User` varchar(20) NOT NULL,
+  `Password` varchar(20) NOT NULL,
+  `Permission` varchar(20) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1

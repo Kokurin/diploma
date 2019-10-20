@@ -1,0 +1,4 @@
+CREATE TABLE `type_of_equipment` (
+  `Type` varchar(30) NOT NULL DEFAULT '',
+  PRIMARY KEY (`Type`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1

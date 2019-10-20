@@ -1,0 +1,4 @@
+CREATE TABLE `objective_function` (
+  `Function` varchar(20) NOT NULL DEFAULT '',
+  PRIMARY KEY (`Function`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1

@@ -1,0 +1,12 @@
+CREATE TABLE `decom_equipment` (
+  `ID_equipment` int(11) DEFAULT NULL,
+  `Name` varchar(200) DEFAULT NULL,
+  `Type` char(18) DEFAULT NULL,
+  `Status` char(18) DEFAULT NULL,
+  `Function` char(18) DEFAULT NULL,
+  `ID_person` int(11) DEFAULT NULL,
+  `The_warranty_ends` date DEFAULT NULL,
+  `Release_year` date DEFAULT NULL,
+  `Сharacteristics` text,
+  `Note` text
+) ENGINE=InnoDB DEFAULT CHARSET=latin1

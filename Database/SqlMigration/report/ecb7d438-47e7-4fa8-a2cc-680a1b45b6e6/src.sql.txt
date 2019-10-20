@@ -1,0 +1,4 @@
+CREATE TABLE `rooms` (
+  `Room` varchar(20) NOT NULL DEFAULT '',
+  PRIMARY KEY (`Room`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1

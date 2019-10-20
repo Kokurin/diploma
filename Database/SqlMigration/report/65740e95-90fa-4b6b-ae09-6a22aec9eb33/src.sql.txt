@@ -1,0 +1,6 @@
+CREATE TABLE `journal_history` (
+  `ID_record` int(11) DEFAULT NULL,
+  `ID_equipment` char(18) DEFAULT NULL,
+  `Room` char(18) DEFAULT NULL,
+  `Location` varchar(20) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1
